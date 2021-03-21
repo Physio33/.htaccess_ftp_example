@@ -2,12 +2,36 @@
 # open-sourced under the MIT License, https://opensource.org/
 # hosted on GitHub, https://github.com/Physio33
 
-# Entête et pied de page
+# Entête et pied de page (placés à la racine du site)
 # / permet que le fichier soit valider pour toute l'arborescence
 # . permet de "cacher" les fichiers
 HeaderName /.header.html
 ReadmeName /.readme.html
 
+# Affichage avec des icones personnalisés (placés dans le répertoire /icons à la racine du site)
+# Icone spécifique au répertoire parent
+AddIcon /icons/parent.png ..
+
+# Icone spécifique aux répertoires
+AddIcon /icons/folder.png
+
+# Icones spécifiques à chaque type de fichiers
+AddIcon /icons/text.png .txt
+AddIcon /icons/image.png .jpg .jpeg .jpe .png .gif
+AddIcon /icons/calendar.png .ics
+AddIcon /icons/pdf.png .pdf
+AddIcon /icons/zip.png .zip .rar .7z
+AddIcon /icons/video.png .mpg .avi
+AddIcon /icons/audio.png .mp3 .wav
+AddIcon /icons/word.png .doc .docx
+AddIcon /icons/excel.png .xls .xlsx
+AddIcon /icons/powerpoint.png .ppt .pps .ppsx
+
+# Icone par défaut
+DefaultIcon /icons/unknown.png
 
 # Autorisation de lister les fichiers pour toute l'arborescence
 Options +Indexes
+
+# Fichiers à ignorer dans le listing
+IndexIgnore header.html readme.html favicon.ico .htaccess .ftpquota .DS_Store icons *.log *,v *,t .??* *~ *#
