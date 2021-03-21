@@ -30,6 +30,9 @@ AddIcon /icons/powerpoint.png .ppt .pps .ppsx
 # Icone par défaut
 DefaultIcon /icons/unknown.png
 
+# Description de chaque fichier
+AddDescription "Fichier lisez-moi!" readme.txt
+
 # Autorisation de lister les fichiers pour toute l'arborescence
 Options +Indexes
 
