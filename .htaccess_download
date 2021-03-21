@@ -2,4 +2,12 @@
 # open-sourced under the MIT License, https://opensource.org/
 # hosted on GitHub, https://github.com/Physio33
 
+# Entête et pied de page
+# / permet que le fichier soit valider pour toute l'arborescence
+# . permet de "cacher" les fichiers
+HeaderName /.header.html
+ReadmeName /.readme.html
+
+
+# Autorisation de lister les fichiers pour toute l'arborescence
 Options +Indexes
