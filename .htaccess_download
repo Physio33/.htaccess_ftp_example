@@ -40,5 +40,21 @@ Options +Indexes
 IndexIgnore .htaccess .header.html .readme.html favicon.ico .ftpquota .DS_Store icons *.log *,v *,t .??* *~ *#
 
 # Paramètres à expliquer
-IndexOptions FancyIndexing FoldersFirst SuppressHTMLPreamble
+IndexOptions FancyIndexing FoldersFirst SuppressHTMLPreamble VersionSort NameWidth=* HTMLTable Charset=UTF-8
 IndexOrderDefault Descending Name
+
+# Pages d'erreurs modifiée
+# 400 Bad Request
+ErrorDocument 400 /errors/400.php
+
+# 401 Authentication Required
+ErrorDocument 401 /errors/401.php
+
+# 403 Forbidden
+ErrorDocument 403 /errors/403.php
+
+# 404 Not Found
+ErrorDocument 404 /errors/404.php
+
+# 500 Server Error
+ErrorDocument 500 /errors/500.php
