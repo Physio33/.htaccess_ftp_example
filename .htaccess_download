@@ -35,3 +35,7 @@ Options +Indexes
 
 # Fichiers à ignorer dans le listing
 IndexIgnore header.html readme.html favicon.ico .htaccess .ftpquota .DS_Store icons *.log *,v *,t .??* *~ *#
+
+# Paramètres à expliquer
+IndexOptions FancyIndexing FoldersFirst SuppressHTMLPreamble
+IndexOrderDefault Descending Name
