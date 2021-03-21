@@ -30,17 +30,25 @@ AddIcon /icons/powerpoint.png .ppt .pps .ppsx
 # Icone par défaut
 DefaultIcon /icons/unknown.png
 
-# Description de chaque fichier
+# Description de chaque fichier/répertoire
+AddDescription "Dossier parent" ..
+AddDescription "Dossier de fichiers" */
 AddDescription "Fichier lisez-moi!" readme.txt
+AddDescription "Adobe Acrobat Document" *.pdf
+AddDescription "Document Microsoft Word" *.doc *.rtf *.docx
+AddDescription "Feuille de calcul Microsoft Excel" *.xls *.xlsx
+AddDescription "Présentation Microsoft PowerPoint" *.ppt *.pptx
+AddDescription "Document Microsoft Publisher" *.pub
+AddDescription "Dossier compressé" .7z .zip .rar .arj .arc .tar .jar .gz .targz
 
 # Autorisation de lister les fichiers pour toute l'arborescence
 Options +Indexes
 
 # Fichiers à ignorer dans le listing
-IndexIgnore .htaccess .header.html .readme.html favicon.ico .ftpquota .DS_Store icons *.log *,v *,t .??* *~ *#
+IndexIgnore .htaccess .header.html .readme.html favicon.ico .ftpquota .DS_Store icons *.log *,v *,t .??* *~ *# Thumbs.db db _notes
 
 # Paramètres à expliquer
-IndexOptions FancyIndexing FoldersFirst SuppressHTMLPreamble VersionSort NameWidth=* HTMLTable Charset=UTF-8
+IndexOptions FancyIndexing FoldersFirst SuppressHTMLPreamble VersionSort NameWidth=* HTMLTable Charset=UTF-8 IgnoreCase
 IndexOrderDefault Descending Name
 
 # Pages d'erreurs modifiée
