@@ -34,12 +34,19 @@ DefaultIcon /icons/unknown.png
 AddDescription "Dossier parent" ..
 AddDescription "Dossier de fichiers" */
 AddDescription "Fichier lisez-moi!" readme.txt
+AddDescription "Document texte" *.txt
 AddDescription "Adobe Acrobat Document" *.pdf
 AddDescription "Document Microsoft Word" *.doc *.rtf *.docx
 AddDescription "Feuille de calcul Microsoft Excel" *.xls *.xlsx
 AddDescription "Présentation Microsoft PowerPoint" *.ppt *.pptx
 AddDescription "Document Microsoft Publisher" *.pub
 AddDescription "Dossier compressé" .7z .zip .rar .arj .arc .tar .jar .gz .targz
+
+AddDescription "Fichier MP3" *.mp3
+
+AddDescription "Fichier PNG" *.png
+
+AddDescription "Application" *.exe
 
 # Autorisation de lister les fichiers pour toute l'arborescence
 Options +Indexes
