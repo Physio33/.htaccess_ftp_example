@@ -45,6 +45,9 @@ AddDescription "Dossier compressé" .7z .zip .rar .arj .arc .tar .jar .gz .targz
 AddDescription "Fichier MP3" *.mp3
 
 AddDescription "Fichier PNG" *.png
+AddDescription "Fichier JPG" *.jpg .jpeg
+AddDescription "Fichier GIF" *.gif
+AddDescription "Fichier BMP" *.bmp
 
 AddDescription "Application" *.exe
 
