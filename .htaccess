@@ -40,16 +40,20 @@ AddDescription "Document Microsoft Word" *.doc *.rtf *.docx
 AddDescription "Feuille de calcul Microsoft Excel" *.xls *.xlsx
 AddDescription "Présentation Microsoft PowerPoint" *.ppt *.pptx
 AddDescription "Document Microsoft Publisher" *.pub
-AddDescription "Dossier compressé" .7z .zip .rar .arj .arc .tar .jar .gz .targz
+AddDescription "Dossier compressé" .7z .zip .rar .arj .arc lzh  .jar .gz .tar.gz
 
-AddDescription "Fichier MP3" *.mp3
+AddDescription "Archive" *.tar *.TAR
 
-AddDescription "Fichier PNG" *.png
-AddDescription "Fichier JPG" *.jpg .jpeg
-AddDescription "Fichier GIF" *.gif
-AddDescription "Fichier BMP" *.bmp
+AddDescription "Fichier MP3" *.mp3 *.MP3
+AddDescription "Fichier WAV" *.wav *.WAV
 
-AddDescription "Application" *.exe
+AddDescription "Fichier BMP" *.bmp *.BMP
+AddDescription "Fichier GIF" *.gif *.GIF
+AddDescription "Fichier JPG" *.jpg *.jpeg *.JPG *.JPEG
+AddDescription "Fichier PNG" *.png *.PNG
+AddDescription "Fichier SVG" *.svg *.SVG
+
+AddDescription "Application" *.exe *.EXE
 
 # Autorisation de lister les fichiers pour toute l'arborescence
 Options +Indexes
