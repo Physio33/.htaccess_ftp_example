@@ -17,10 +17,10 @@ AddIcon /icons/folder.png
 
 # Icones spécifiques à chaque type de fichiers
 AddIcon /icons/text.png .txt
-AddIcon /icons/image.png .jpg .jpeg .jpe .png .gif
-AddIcon /icons/calendar.png .ics
+AddIcon /icons/image.png .jpg .jpeg .png .gif
 AddIcon /icons/pdf.png .pdf
 AddIcon /icons/zip.png .zip .rar .7z
+AddIcon /icons/archive.png .tar
 AddIcon /icons/video.png .mpg .avi
 AddIcon /icons/audio.png .mp3 .wav
 AddIcon /icons/word.png .doc .docx
