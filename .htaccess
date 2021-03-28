@@ -55,11 +55,40 @@ AddDescription "Fichier SVG" *.svg *.SVG
 
 AddDescription "Application" *.exe *.EXE
 
+# Redirection vers HTTPS 
+RewriteCond     %{SERVER_PORT} ^80$
+RewriteRule     ^(.*)$ https://%{SERVER_NAME}%{REQUEST_URI} [L,R]
+
+# Encodage par défaut des fichiers textes et HTML
+AddDefaultCharset UTF-8
+
+# Page de maintenance
+RewriteEngine on
+RewriteCond %{REQUEST_URI} !/maintenance.html$
+RewriteCond %{REMOTE_ADDR} !^xxx\.xxx\.xxx\.xxx
+RewriteRule $ /maintenance.html [R=302,L]
+
+# Protection des fichiers .htaccess et .htpasswds
+<Files ~ "^.*\.([Hh][Tt][AaPp])">
+order allow,deny
+deny from all
+satisfy all
+</Files>
+
+# Forcer le téléchargement pour ces types de fichiers
+AddType application/octet-stream .doc .docx .xls .xlsx .csv .mp3 .mp4
+
+# Désactiver le hotlinking des images (à refaire)
+RewriteEngine On
+RewriteCond %{HTTP_REFERER} !^$
+RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?monsite.com [NC]
+RewriteRule \.(jpg|jpeg|png|gif)$ http://fakeimg.pl/400x200/?text=Pas_touche_aux_images [NC,R,L]
+
 # Autorisation de lister les fichiers pour toute l'arborescence
 Options +Indexes
 
 # Fichiers à ignorer dans le listing
-IndexIgnore .htaccess .header.html .readme.html favicon.ico .ftpquota .DS_Store icons *.log *,v *,t .??* *~ *# Thumbs.db db _notes
+IndexIgnore .htaccess .header.html .readme.html favicon.ico .ftpquota .DS_Store icons Thumbs.db db _notes *.log *,v *,t .??* *~ *# 
 
 # Paramètres à expliquer
 IndexOptions FancyIndexing FoldersFirst SuppressHTMLPreamble VersionSort NameWidth=* HTMLTable Charset=UTF-8 IgnoreCase
