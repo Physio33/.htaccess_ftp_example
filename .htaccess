@@ -16,16 +16,18 @@ AddIcon (PAR,/icons/parent.png) ..
 AddIcon (DIR,/icons/folder.png) ^^DIRECTORY^^
 
 # Icones spécifiques à chaque type de fichiers
-AddIcon /icons/text.png .txt
+AddIcon (TXT,/icons/text.png) .txt
+AddIcon (PDF,/icons/pdf.png) .pdf
+AddIcon (DOC,/icons/word.png) .doc .docx .odt .rtf
+AddIcon (DOC,/icons/excel.png) .csv .ods .xls .xlsx
+AddIcon (DOC,/icons/powerpoint.png) .odp .ppt .pptx
+
 AddIcon /icons/image.png .jpg .jpeg .png .gif
-AddIcon /icons/pdf.png .pdf
 AddIcon /icons/zip.png .zip .rar .7z
 AddIcon /icons/archive.png .tar
 AddIcon /icons/video.png .mpg .avi
 AddIcon /icons/audio.png .mp3 .wav
-AddIcon /icons/word.png .doc .docx
-AddIcon /icons/excel.png .xls .xlsx
-AddIcon /icons/powerpoint.png .ppt .pps .ppsx
+
 
 # Icone par défaut
 DefaultIcon /icons/unknown.png
@@ -33,14 +35,14 @@ DefaultIcon /icons/unknown.png
 # Description de chaque fichier/répertoire
 AddDescription "Dossier parent" ..
 AddDescription "Dossier de fichiers" */
-
-AddDescription "Fichier lisez-moi!" readme.txt
 AddDescription "Document texte" *.txt
 AddDescription "Adobe Acrobat Document" *.pdf
-AddDescription "Document Microsoft Word" *.doc *.rtf *.docx
-AddDescription "Feuille de calcul Microsoft Excel" *.xls *.xlsx
-AddDescription "Présentation Microsoft PowerPoint" *.ppt *.pptx
+AddDescription "Document Microsoft Word" *.doc *.docx *.odt *.rtf
+AddDescription "Feuille de calcul Microsoft Excel" *.csv *.ods *.xls *.xlsx
+AddDescription "Présentation Microsoft PowerPoint" *.odp *.ppt *.pptx
+
 AddDescription "Document Microsoft Publisher" *.pub
+
 AddDescription "Dossier compressé" .7z .zip .rar .arj .arc lzh  .jar .gz .tar.gz
 
 AddDescription "Archive" *.tar *.TAR
@@ -48,13 +50,19 @@ AddDescription "Archive" *.tar *.TAR
 AddDescription "Fichier MP3" *.mp3 *.MP3
 AddDescription "Fichier WAV" *.wav *.WAV
 
-AddDescription "Fichier BMP" *.bmp *.BMP
-AddDescription "Fichier GIF" *.gif *.GIF
-AddDescription "Fichier JPG" *.jpg *.jpeg *.JPG *.JPEG
-AddDescription "Fichier PNG" *.png *.PNG
-AddDescription "Fichier SVG" *.svg *.SVG
+Add "Fichier Vidéo MPEG-4 *.mp4
+Windows Media Video .wmv
+
+AddDescription "Fichier BMP" *.bmp
+AddDescription "Fichier GIF" *.gif
+AddDescription "Fichier JPEG" *.jpg *.jpeg
+AddDescription "Fichier PNG" *.png
+AddDescription "Fichier SVG" *.svg
+AddDescription "Fichier TIFF" *.tif
 
 AddDescription "Application" *.exe *.EXE
+
+AddDescription "Fichier lisez-moi!" readme.txt
 
 # Redirection vers HTTPS 
 RewriteCond     %{SERVER_PORT} ^80$
