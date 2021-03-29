@@ -21,6 +21,7 @@ AddIcon (PDF,/icons/pdf.png) .pdf
 AddIcon (DOC,/icons/word.png) .doc .docx .odt .rtf
 AddIcon (DOC,/icons/excel.png) .csv .ods .xls .xlsx
 AddIcon (DOC,/icons/powerpoint.png) .odp .ppt .pptx
+AddIcon (DOC,/icons/publisher.png) .pub
 
 AddIcon /icons/image.png .jpg .jpeg .png .gif
 AddIcon /icons/zip.png .zip .rar .7z
