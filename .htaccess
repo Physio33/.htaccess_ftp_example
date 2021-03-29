@@ -23,12 +23,11 @@ AddIcon (OFFICE,/icons/word.png) .doc .docx .odt .rtf
 AddIcon (OFFICE,/icons/excel.png) .csv .ods .xls .xlsx
 AddIcon (OFFICE,/icons/powerpoint.png) .odp .ppt .pptx
 AddIcon (OFFICE,/icons/publisher.png) .pub
-AddIcon (IMG,/icons/image.png) .bmp .gif .jpg .png .svg .tif
-AddIcon (ARCHIVE,/icons/zip.png) .7z .bz2 .gz .lz .tar .rar .xz .z .zip
-
-AddIcon /icons/video.png .mpg .avi
-AddIcon /icons/audio.png .mp3 .wav
-
+AddIcon (PICTURE,/icons/image.png) .bmp .gif .jpg .png .svg .tif
+AddIcon (AUDIO,/icons/audio.png) .m4a .mp3 .wav .wma
+AddIcon (VIDEO,/icons/video.png) .avi .mp4 .wmv
+AddIcon (ARCHIVE,/icons/zip.png) .7z .bz2 .gz .lz .rar .tar .xz .z .zip
+AddIcon (IMAGE,/icons/iso.png) .iso
 
 # Icone par défaut
 DefaultIcon /icons/unknown.png
@@ -43,20 +42,23 @@ AddDescription "Document Microsoft Word" *.doc *.docx *.odt *.rtf
 AddDescription "Feuille de calcul Microsoft Excel" *.csv *.ods *.xls *.xlsx
 AddDescription "Présentation Microsoft PowerPoint" *.odp *.ppt *.pptx
 AddDescription "Document Microsoft Publisher" *.pub
-AddDescription "Fichier BMP" *.bmp
-AddDescription "Fichier GIF" *.gif
-AddDescription "Fichier JPEG" *.jpg
-AddDescription "Fichier PNG" *.png
-AddDescription "Fichier SVG" *.svg
-AddDescription "Fichier TIFF" *.tif
-
-AddDescription "Dossier compressé" *.7z *.bz2 *.gz *.lz *.tar *.rar *.xz *.z *.zip
+AddDescription "Image BMP" *.bmp
+AddDescription "Image GIF" *.gif
+AddDescription "Image JPEG" *.jpg
+AddDescription "Image PNG" *.png
+AddDescription "Image SVG" *.svg
+AddDescription "Image TIFF" *.tif
+AddDescription "Audio M4A" *.m4a
+AddDescription "Audio MP3" *.mp3
+AddDescription "Audio WAVE" *.wav
+AddDescription "Audio WMA" *.wma
+AddDescription "Video AVI" *.avi
+AddDescription "Video MP4" *.mp4
+AddDescription "Video WMV" *.wmv
+AddDescription "Dossier compressé" *.7z *.bz2 *.gz *.lz *.rar *.xz *.z *.zip
 AddDescription "Archive" *.tar
+AddDescription "Image disque" *.iso
 
-AddDescription "Fichier MP3" *.mp3 *.MP3
-AddDescription "Fichier WAV" *.wav *.WAV
-AddDescription "Fichier Vidéo MPEG-4" *.mp4
-AddDescription "Windows Media Video" .wmv
 AddDescription "Fichier lisez-moi!" readme.txt
 
 # Redirection vers HTTPS 
