@@ -23,6 +23,8 @@ AddIcon (DOC,/icons/excel.png) .csv .ods .xls .xlsx
 AddIcon (DOC,/icons/powerpoint.png) .odp .ppt .pptx
 AddIcon (DOC,/icons/publisher.png) .pub
 
+
+
 AddIcon /icons/image.png .jpg .jpeg .png .gif
 AddIcon /icons/zip.png .zip .rar .7z
 AddIcon /icons/archive.png .tar
@@ -41,7 +43,6 @@ AddDescription "Adobe Acrobat Document" *.pdf
 AddDescription "Document Microsoft Word" *.doc *.docx *.odt *.rtf
 AddDescription "Feuille de calcul Microsoft Excel" *.csv *.ods *.xls *.xlsx
 AddDescription "Présentation Microsoft PowerPoint" *.odp *.ppt *.pptx
-
 AddDescription "Document Microsoft Publisher" *.pub
 
 AddDescription "Dossier compressé" .7z .zip .rar .arj .arc lzh  .jar .gz .tar.gz
