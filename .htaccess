@@ -10,10 +10,10 @@ ReadmeName /.readme.html
 
 # Affichage avec des icones personnalisés (placés dans le répertoire /icons à la racine du site)
 # Icone spécifique au répertoire parent
-AddIcon /icons/parent.png ..
+AddIcon (PAR,/icons/parent.png) ..
 
 # Icone spécifique aux répertoires
-AddIcon /icons/folder.png
+AddIcon (DIR,/icons/folder.png) ^^DIRECTORY^^
 
 # Icones spécifiques à chaque type de fichiers
 AddIcon /icons/text.png .txt
@@ -33,6 +33,7 @@ DefaultIcon /icons/unknown.png
 # Description de chaque fichier/répertoire
 AddDescription "Dossier parent" ..
 AddDescription "Dossier de fichiers" */
+
 AddDescription "Fichier lisez-moi!" readme.txt
 AddDescription "Document texte" *.txt
 AddDescription "Adobe Acrobat Document" *.pdf
@@ -95,17 +96,17 @@ IndexOptions FancyIndexing FoldersFirst SuppressHTMLPreamble VersionSort NameWid
 IndexOrderDefault Descending Name
 
 # Pages d'erreurs modifiée
-# 400 Bad Request
+# 400 Bad Request / La requête est syntaxiquement mal formulée ou est impossible à satisfaire
 ErrorDocument 400 /errors/400.php
 
-# 401 Authentication Required
+# 401 Authentication Required / Le client doit reformuler sa requête avec les bonnes données d\'autorisation
 ErrorDocument 401 /errors/401.php
 
-# 403 Forbidden
+# 403 Forbidden / L\'accès à la ressource est interdit
 ErrorDocument 403 /errors/403.php
 
-# 404 Not Found
+# 404 Not Found / Le serveur n\'a rien trouvé à l\'adresse spécifiée
 ErrorDocument 404 /errors/404.php
 
-# 500 Server Error
+# 500 Server Error / Le serveur a rencontré une situationinattendue qui l\'a empêché de donner suite à la demande
 ErrorDocument 500 /errors/500.php
