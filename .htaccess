@@ -16,16 +16,15 @@ AddIcon (PAR,/icons/parent.png) ..
 AddIcon (DIR,/icons/folder.png) ^^DIRECTORY^^
 
 # Icones spécifiques à chaque type de fichiers
+AddIcon (EXE,/icons/application.png) .exe
 AddIcon (TXT,/icons/text.png) .txt
 AddIcon (PDF,/icons/pdf.png) .pdf
 AddIcon (DOC,/icons/word.png) .doc .docx .odt .rtf
 AddIcon (DOC,/icons/excel.png) .csv .ods .xls .xlsx
 AddIcon (DOC,/icons/powerpoint.png) .odp .ppt .pptx
 AddIcon (DOC,/icons/publisher.png) .pub
+AddIcon (IMG,/icons/image.png) .bmp .gif .jpg .png .svg .tif
 
-
-
-AddIcon /icons/image.png .jpg .jpeg .png .gif
 AddIcon /icons/zip.png .zip .rar .7z
 AddIcon /icons/archive.png .tar
 AddIcon /icons/video.png .mpg .avi
@@ -38,32 +37,26 @@ DefaultIcon /icons/unknown.png
 # Description de chaque fichier/répertoire
 AddDescription "Dossier parent" ..
 AddDescription "Dossier de fichiers" */
+AddDescription "Application" *.exe
 AddDescription "Document texte" *.txt
 AddDescription "Adobe Acrobat Document" *.pdf
 AddDescription "Document Microsoft Word" *.doc *.docx *.odt *.rtf
 AddDescription "Feuille de calcul Microsoft Excel" *.csv *.ods *.xls *.xlsx
 AddDescription "Présentation Microsoft PowerPoint" *.odp *.ppt *.pptx
 AddDescription "Document Microsoft Publisher" *.pub
-
-AddDescription "Dossier compressé" .7z .zip .rar .arj .arc lzh  .jar .gz .tar.gz
-
-AddDescription "Archive" *.tar *.TAR
-
-AddDescription "Fichier MP3" *.mp3 *.MP3
-AddDescription "Fichier WAV" *.wav *.WAV
-
-Add "Fichier Vidéo MPEG-4 *.mp4
-Windows Media Video .wmv
-
 AddDescription "Fichier BMP" *.bmp
 AddDescription "Fichier GIF" *.gif
-AddDescription "Fichier JPEG" *.jpg *.jpeg
+AddDescription "Fichier JPEG" *.jpg
 AddDescription "Fichier PNG" *.png
 AddDescription "Fichier SVG" *.svg
 AddDescription "Fichier TIFF" *.tif
 
-AddDescription "Application" *.exe *.EXE
-
+AddDescription "Dossier compressé" .7z .zip .rar .arj .arc lzh  .jar .gz .tar.gz
+AddDescription "Archive" *.tar *.TAR
+AddDescription "Fichier MP3" *.mp3 *.MP3
+AddDescription "Fichier WAV" *.wav *.WAV
+AddDescription "Fichier Vidéo MPEG-4" *.mp4
+AddDescription "Windows Media Video" .wmv
 AddDescription "Fichier lisez-moi!" readme.txt
 
 # Redirection vers HTTPS 
@@ -109,13 +102,13 @@ IndexOrderDefault Descending Name
 # 400 Bad Request / La requête est syntaxiquement mal formulée ou est impossible à satisfaire
 ErrorDocument 400 /errors/400.php
 
-# 401 Authentication Required / Le client doit reformuler sa requête avec les bonnes données d\'autorisation
+# 401 Authentication Required / Le client doit reformuler sa requête avec les bonnes données d'autorisation
 ErrorDocument 401 /errors/401.php
 
 # 403 Forbidden / L\'accès à la ressource est interdit
 ErrorDocument 403 /errors/403.php
 
-# 404 Not Found / Le serveur n\'a rien trouvé à l\'adresse spécifiée
+# 404 Not Found / Nous n'avons pas trouvé la page que vous cherhez /retour a l'accueil / Retour
 ErrorDocument 404 /errors/404.php
 
 # 500 Server Error / Le serveur a rencontré une situationinattendue qui l\'a empêché de donner suite à la demande
