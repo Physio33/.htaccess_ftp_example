@@ -30,7 +30,7 @@ AddIcon (ARCHIVE,/icons/zip.png) .7z .bz2 .gz .lz .rar .tar .xz .z .zip
 AddIcon (IMAGE,/icons/iso.png) .iso
 
 # Icones spéciales
-AddIcon readme.txt
+AddIcon (README,/icons.readme.png) readme.txt
 
 # Icone par défaut
 DefaultIcon /icons/unknown.png
@@ -107,14 +107,14 @@ IndexIgnore .htaccess .header.html .readme.html favicon.ico .ftpquota .DS_Store 
 IndexOptions FancyIndexing FoldersFirst SuppressHTMLPreamble VersionSort NameWidth=* HTMLTable Charset=UTF-8 IgnoreCase
 IndexOrderDefault Descending Name
 
-# Pages d'erreurs modifiée avec retour à l'accueil et retour page précédente
-# 400 Bad Request / La syntaxe de la requête est erronée.
-# 401 Authentication Required / Une authentification est nécessaire pour accéder à la ressource.
-# 403 Forbidden / L'accès à la ressource est interdit.
-# 404 Not Found / Nous n'avons pas trouvé la page que vous cherchez. Ressource non trouvée.
-# 500 Server Error / Erreur interne du serveur.
-ErrorDocument 400 /errors/400.php
-ErrorDocument 401 /errors/401.php
-ErrorDocument 403 /errors/403.php
-ErrorDocument 404 /errors/404.php
-ErrorDocument 500 /errors/500.php
+# Pages d'erreurs modifiée avec retour à l'accueil et retour page précédente.
+# 400 Bad Request/ Requête erronée/La syntaxe de la requête est erronée
+# 401 Authentication Required/Authentification nécéssaire/Une authentification est nécessaire pour accéder à la ressource
+# 403 Forbidden/Accès interdit/L'accès à la ressource est interdit
+# 404 Not Found/Ressource inconnue/Nous n'avons pas trouvé la page que vous cherchez
+# 500 Server Error/Erreur interne du serveur/
+ErrorDocument 400 /errors/400.html
+ErrorDocument 401 /errors/401.html
+ErrorDocument 403 /errors/403.html
+ErrorDocument 404 /errors/404.html
+ErrorDocument 500 /errors/500.html
