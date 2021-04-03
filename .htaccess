@@ -108,11 +108,11 @@ IndexOptions FancyIndexing FoldersFirst SuppressHTMLPreamble VersionSort NameWid
 IndexOrderDefault Descending Name
 
 # Pages d'erreurs modifiée avec retour à l'accueil et retour page précédente.
-# 400 Bad Request/ Requête erronée/La syntaxe de la requête est erronée
-# 401 Authentication Required/Authentification nécéssaire/Une authentification est nécessaire pour accéder à la ressource
-# 403 Forbidden/Accès interdit/L'accès à la ressource est interdit
-# 404 Not Found/Ressource inconnue/Nous n'avons pas trouvé la page que vous cherchez
-# 500 Server Error/Erreur interne du serveur/
+# 400 - Bad Request/Requête erronée/La syntaxe de la requête est erronée
+# 401 - Authentication Required/Authentification nécéssaire/Une authentification est nécessaire pour accéder à la ressource
+# 403 - Forbidden/Accès interdit/L'accès à la ressource est interdit
+# 404 - Not Found/Ressource inconnue/Nous n'avons pas trouvé la page que vous cherchez
+# 500 - Server Error/Erreur interne du serveur/Le serveur vient de rencontrer une erreur interne
 ErrorDocument 400 /errors/400.html
 ErrorDocument 401 /errors/401.html
 ErrorDocument 403 /errors/403.html
