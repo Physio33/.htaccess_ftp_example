@@ -29,6 +29,9 @@ AddIcon (VIDEO,/icons/video.png) .avi .mp4 .wmv
 AddIcon (ARCHIVE,/icons/zip.png) .7z .bz2 .gz .lz .rar .tar .xz .z .zip
 AddIcon (IMAGE,/icons/iso.png) .iso
 
+# Icones spéciales
+AddIcon readme.txt
+
 # Icone par défaut
 DefaultIcon /icons/unknown.png
 
@@ -104,18 +107,14 @@ IndexIgnore .htaccess .header.html .readme.html favicon.ico .ftpquota .DS_Store 
 IndexOptions FancyIndexing FoldersFirst SuppressHTMLPreamble VersionSort NameWidth=* HTMLTable Charset=UTF-8 IgnoreCase
 IndexOrderDefault Descending Name
 
-# Pages d'erreurs modifiée
-# 400 Bad Request / La syntaxe de la requête est erronée. / Retour à l'accueil / Retour
+# Pages d'erreurs modifiée avec retour à l'accueil et retour page précédente
+# 400 Bad Request / La syntaxe de la requête est erronée.
+# 401 Authentication Required / Une authentification est nécessaire pour accéder à la ressource.
+# 403 Forbidden / L'accès à la ressource est interdit.
+# 404 Not Found / Nous n'avons pas trouvé la page que vous cherchez. Ressource non trouvée.
+# 500 Server Error / Erreur interne du serveur.
 ErrorDocument 400 /errors/400.php
-
-# 401 Authentication Required / Une authentification est nécessaire pour accéder à la ressource. / Retour à l'accueil / Retour
 ErrorDocument 401 /errors/401.php
-
-# 403 Forbidden / L'accès à la ressource est interdit. / Retour à l'accueil / Retour
 ErrorDocument 403 /errors/403.php
-
-# 404 Not Found / Nous n'avons pas trouvé la page que vous cherchez. Ressource non trouvée. / Retour à l'accueil / Retour
 ErrorDocument 404 /errors/404.php
-
-# 500 Server Error / Erreur interne du serveur. / Retour à l'accueil / Retour
 ErrorDocument 500 /errors/500.php
