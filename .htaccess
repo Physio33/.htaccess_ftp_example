@@ -88,8 +88,8 @@ AddType application/octet-stream .exe .pdf .doc .docx .odt .rtf .csv .ods .xls .
 # Désactiver le hotlinking des images (à refaire)
 RewriteEngine On
 RewriteCond %{HTTP_REFERER} !^$
-RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?monsite.com [NC]
-RewriteRule \.(jpg|jpeg|png|gif)$ http://fakeimg.pl/400x200/?text=Pas_touche_aux_images [NC,R,L]
+RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?\domain.com/ [NC]
+RewriteRule \.(jpg|jpeg|png|gif)$ - [NC,R,L]
 
 # Autorisation de lister les fichiers pour toute l'arborescence
 Options +Indexes
