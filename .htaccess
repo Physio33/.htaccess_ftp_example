@@ -86,7 +86,7 @@ satisfy all
 </Files>
 
 # Forcer le téléchargement pour ces types de fichiers
-AddType application/octet-stream .exe .pdf .doc .docx .odt .rtf .csv .ods .xls .xlsx .odp .ppt .pptx .pub
+AddType application/octet-stream .exe .pdf .doc .docx .odt .rtf .csv .ods .xls .xlsx .odp .ppt .pptx .pub .bmp .gif .jpg .png .svg .tif .m4a .mp3 .wav .wma .avi .mp4 .wmv .7z .bz2 .gz .lz .rar .tar .xz .z .zip .iso
 
 # Désactiver le hotlinking des images
 RewriteEngine On
