@@ -85,10 +85,11 @@ satisfy all
 # Forcer le téléchargement pour ces types de fichiers
 AddType application/octet-stream .exe .pdf .doc .docx .odt .rtf .csv .ods .xls .xlsx .odp .ppt .pptx .pub
 
-# Désactiver le hotlinking des images (à refaire)
+# Désactiver le hotlinking des images
 RewriteEngine On
 RewriteCond %{HTTP_REFERER} !^$
 RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?\domain.com/ [NC]
+RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?\google.com/ [NC]
 RewriteRule \.(jpg|jpeg|png|gif)$ - [NC,R,L]
 
 # Autorisation de lister les fichiers pour toute l'arborescence
