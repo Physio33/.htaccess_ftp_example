@@ -59,7 +59,8 @@ AddDescription "Dossier compressé" *.7z *.bz2 *.gz *.lz *.rar *.xz *.z *.zip
 AddDescription "Archive" *.tar
 AddDescription "Fichier d'image disque" *.iso
 
-AddDescription "Fichier lisez-moi!" readme.txt
+# Description spéciale
+AddDescription "Lisez-moi!" readme.txt
 
 # Redirection vers HTTPS 
 RewriteCond     %{SERVER_PORT} ^80$
