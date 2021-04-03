@@ -72,6 +72,7 @@ AddDefaultCharset UTF-8
 # Page de maintenance
 RewriteEngine on
 RewriteCond %{REQUEST_URI} !/maintenance.html$
+# Adresse IP du mainteneur
 RewriteCond %{REMOTE_ADDR} !^xxx\.xxx\.xxx\.xxx
 RewriteRule $ /maintenance.html [R=302,L]
 
@@ -83,7 +84,7 @@ satisfy all
 </Files>
 
 # Forcer le téléchargement pour ces types de fichiers
-AddType application/octet-stream .doc .docx .xls .xlsx .csv .mp3 .mp4
+AddType application/octet-stream .exe .pdf .doc .docx .odt .rtf .csv .ods .xls .xlsx .odp .ppt .pptx .pub
 
 # Désactiver le hotlinking des images (à refaire)
 RewriteEngine On
