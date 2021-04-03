@@ -90,7 +90,8 @@ RewriteEngine On
 RewriteCond %{HTTP_REFERER} !^$
 RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?\domain.com/ [NC]
 RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?\google.com/ [NC]
-...
+RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?\bing.com/ [NC]
+RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?\yahoo.com/ [NC]
 RewriteRule \.(bmp|jpg|jpeg|png|gif|svg|css)$ - [NC,R,L] OR [NC,F]
 
 # Autorisation de lister les fichiers pour toute l'arborescence
