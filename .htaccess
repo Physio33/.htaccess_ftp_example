@@ -69,10 +69,9 @@ RewriteRule ^(.*)$ https://%{SERVER_NAME}%{REQUEST_URI} [L,R]
 # Encodage par défaut des fichiers textes et HTML
 AddDefaultCharset UTF-8
 
-# Page de maintenance
+# Page de maintenance (complèter l'adresse IP)
 RewriteEngine on
 RewriteCond %{REQUEST_URI} !/maintenance.html$
-# Adresse IP du mainteneur
 RewriteCond %{REMOTE_ADDR} !^xxx\.xxx\.xxx\.xxx
 RewriteRule $ /maintenance.html [R=302,L]
 
