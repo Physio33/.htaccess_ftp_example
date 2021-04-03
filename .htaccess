@@ -63,8 +63,8 @@ AddDescription "Fichier d'image disque" *.iso
 AddDescription "Lisez-moi!" readme.txt
 
 # Redirection vers HTTPS 
-RewriteCond     %{SERVER_PORT} ^80$
-RewriteRule     ^(.*)$ https://%{SERVER_NAME}%{REQUEST_URI} [L,R]
+RewriteCond %{SERVER_PORT} ^80$
+RewriteRule ^(.*)$ https://%{SERVER_NAME}%{REQUEST_URI} [L,R]
 
 # Encodage par défaut des fichiers textes et HTML
 AddDefaultCharset UTF-8
