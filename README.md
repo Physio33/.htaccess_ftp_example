@@ -17,7 +17,7 @@ Voir [`https://monsite.fr`](https://monsite.fr).
 
 ## License
 
-This project is released under the [MIT](LICENSE.md) license terms.
+This project is released under the [MIT](LICENSE) license terms.
 
 ## Credits
 
